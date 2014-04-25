@@ -2,8 +2,8 @@
 //	Function:    Header file for class MMC7660 
 //  Hardware:    Grove - 3-Axis Digital Accelerometer(±1.5g)
 //	Arduino IDE: Arduino-1.0
-//	Author:	 FrankieChu		
-//	Date: 	 Jan 10,2013
+//	Author:	 FrankieChu, modified by Musti		
+//	Date: 	 Jan 10,2013, modified 25.4.2014
 //	Version: v1.0
 //	by www.seeedstudio.com
 //
@@ -53,6 +53,7 @@ class MMA7660
 private:
 	void write(uint8_t _register, uint8_t _data);
 	uint8_t read(uint8_t _register);
+	uint8_t notPresent(void);
 public:
 	void init();
 	void setMode(uint8_t mode);
